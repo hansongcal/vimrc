@@ -22,7 +22,7 @@ endif
 " Open MacVim in fullscreen mode
 if has("gui_macvim")
     set fuoptions=maxvert,maxhorz
-    au GUIEnter * set fullscreen
+    " au GUIEnter * set fullscreen
 endif
 
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
@@ -34,7 +34,7 @@ set guioptions-=L
 " Colorscheme
 if has("gui_running")
     set background=dark
-    colorscheme peaksea
+    colorscheme solarized
 else
     colorscheme desert
     let g:colors_name="desert"

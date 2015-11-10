@@ -44,7 +44,7 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
-set history=700
+set history=500
 
 " Enable filetype plugins
 filetype plugin on
@@ -70,13 +70,13 @@ command W w !sudo tee % > /dev/null
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+set so=3
 
 " Turn on the WiLd menu
 set wildmenu
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
+set wildignore=*.o,*~,*.pyc,*.class
 if has("win16") || has("win32")
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 else
@@ -176,6 +176,7 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
+" set shiftwidth=4 "Changed for 61B
 set shiftwidth=4
 set tabstop=4
 
